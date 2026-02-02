@@ -1,11 +1,9 @@
-import 'package:desarrollo_frontend/Producto/presentation/product_view.dart';
+
 import 'package:flutter/material.dart';
 import '../../Users/presentation/profile_screen.dart';
-import '../../Carrito/presentation/cart_screen.dart';
 import 'color_extension.dart';
 import 'common_widget/tab_button.dart';
 import '../../home/presentation/home_view.dart';
-import '../../order/presentation/order_history_active.dart';
 
 class MainTabView extends StatefulWidget {
   const MainTabView({super.key});
@@ -63,7 +61,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   if (selctTab != 0) {
                     selctTab = 0;
-                    selectPageView = const ProductView();
+                    //selectPageView = const ProductView();
                   }
                   if (mounted) {
                     setState(() {});
@@ -77,7 +75,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   if (selctTab != 1) {
                     selctTab = 1;
-                    selectPageView = const CartScreen();
+                    // selectPageView = const CartScreen();
                   }
                   if (mounted) {
                     setState(() {});
@@ -91,7 +89,7 @@ class _MainTabViewState extends State<MainTabView> {
                 onTap: () {
                   if (selctTab != 3) {
                     selctTab = 3;
-                    selectPageView = OrderHistoryScreen();
+                    //selectPageView = OrderHistoryScreen();
                   }
                   if (mounted) {
                     setState(() {});

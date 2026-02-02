@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../common/presentation/color_extension.dart';
-import '../../statistics/presentation/views/statistics_screen.dart';
 import 'edit_profile_screen.dart';
 import '../../common/presentation/logout_dialog.dart';
 import '../domain/user_profile.dart';

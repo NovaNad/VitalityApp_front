@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../common/infrastructure/base_url.dart';
-import '../../common/presentation/color_extension.dart';
-import '../../common/presentation/common_widget/round_button.dart';
-import '../../common/presentation/common_widget/round_textfield.dart';
+import '../../../common/infrastructure/base_url.dart';
+import '../../../common/presentation/color_extension.dart';
+import '../../../common/presentation/common_widget/round_button.dart';
+import '../../../common/presentation/common_widget/round_textfield.dart';
 import '../infrastructure/login_service.dart';
-import '../../common/presentation/main_tabview.dart';
+import '../../../common/presentation/main_tabview.dart';
 import 'reset_password_view.dart';
 import 'sing_up_view.dart';
 
@@ -75,16 +75,17 @@ class _LoginViewState extends State<LoginView> {
       _isLoading = true;
     });
 
-    final result = await _authService.login(email, password);
-
+    // final result = await _authService.login(email, password);
+    final result = "chao";
     setState(() {
       _isLoading = false;
     });
 
-    if (result.containsKey("error")) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(result["error"])),
-      );
+    // if (result.containsKey("error")) {
+    if (result == "hola") {
+    //   ScaffoldMessenger.of(context).showSnackBar(
+    //     SnackBar(content: Text(result["error"])),
+      // );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("¡Inicio de sesión exitoso!")),

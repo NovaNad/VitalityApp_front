@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-import '../../common/infrastructure/base_url.dart';
-import '../../common/presentation/color_extension.dart';
-import '../../common/presentation/common_widget/round_button.dart';
-import '../../common/presentation/common_widget/round_textfield.dart';
+import '../../../common/infrastructure/base_url.dart';
+import '../../../common/presentation/color_extension.dart';
+import '../../../common/presentation/common_widget/round_button.dart';
+import '../../../common/presentation/common_widget/round_textfield.dart';
 import 'login_view.dart';
 
 class SignUpView extends StatefulWidget {
